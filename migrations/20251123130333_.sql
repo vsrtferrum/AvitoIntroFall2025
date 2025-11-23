@@ -1,0 +1,13 @@
+-- +goose Up
+-- +goose StatementBegin
+CREATE TABLE users(
+    id VARCHAR(255) PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    is_active BOOLEAN NOT NULL
+);
+-- +goose StatementEnd
+
+-- +goose Down
+-- +goose StatementBegin
+DROP TABLE users if EXISTS;
+-- +goose StatementEnd
