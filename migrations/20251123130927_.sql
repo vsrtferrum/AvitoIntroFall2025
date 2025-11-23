@@ -10,5 +10,5 @@ CREATE TABLE teams(
 
 -- +goose Down
 -- +goose StatementBegin
-DROP TABLE teams if EXISTS;
+DROP TABLE IF EXISTS teams;
 -- +goose StatementEnd

@@ -12,5 +12,5 @@ CREATE TABLE review(
 
 -- +goose Down
 -- +goose StatementBegin
-DROP TABLE review IF EXISTS;
+DROP TABLE IF EXISTS review;
 -- +goose StatementEnd

@@ -11,5 +11,5 @@ CREATE TABLE pr (
 
 -- +goose Down
 -- +goose StatementBegin
-DROP TABLE pr IF EXISTS; 
+DROP TABLE IF EXISTS pr; 
 -- +goose StatementEnd
